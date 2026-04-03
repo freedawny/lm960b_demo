@@ -1,0 +1,1101 @@
+[2026-04-03 19:23:49:874] ###################################################
+[2026-04-03 19:23:49:874] #                                                 #
+[2026-04-03 19:23:49:874] #             PLBUS Test tool START               #
+[2026-04-03 19:23:49:874] #                                                 #
+[2026-04-03 19:23:49:874] ###################################################
+[2026-04-03 19:23:51:700] --------------------CUtil::GetAuthenticationCode  Begin--------------------
+[2026-04-03 19:23:51:700] user=LME
+[2026-04-03 19:23:51:700] --------------------CUtil::GetAuthenticationCode  End  --------------------
+[2026-04-03 19:23:51:746] --------------------CTaskExecution::StartWork  Begin--------------------
+[2026-04-03 19:23:51:762] --------------------CTaskExecution::StartWork  End  --------------------
+[2026-04-03 19:23:51:778] =03C22000
+[2026-04-03 19:23:51:778] =03C2BBE8
+[2026-04-03 19:23:51:778] =03C4B2C0
+[2026-04-03 19:23:51:778] =06F65F18
+[2026-04-03 19:23:51:793] =06F90260
+[2026-04-03 19:23:51:793] =06FB0078
+[2026-04-03 19:23:51:793] =06FB2AC8
+[2026-04-03 19:23:51:793] =06FC9690
+[2026-04-03 19:23:51:856] =0710C4E0
+[2026-04-03 19:23:51:856] =0710CE88
+[2026-04-03 19:23:51:856] =0711CA40
+[2026-04-03 19:23:51:856] --------------------CMainDlg::InitDevTestUI  Begin--------------------
+[2026-04-03 19:23:51:856] --------------------CMainDlg::InitDevTestUI  End  --------------------
+[2026-04-03 19:23:55:600] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:24:02:241] --------------------CMainDlg::DoRefreshSystemTestCmd  Begin--------------------
+[2026-04-03 19:24:02:241] --------------------CMainDlg::DoRefreshSystemTestCmd  End  --------------------
+[2026-04-03 19:24:04:394] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:24:06:422] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:24:06:437] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:24:06:437] OpenCom begin
+[2026-04-03 19:24:06:437] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:24:06:437] --------------------CTaskExecution::OpenCom  Begin--------------------
+[2026-04-03 19:24:06:437] --------------------CIProtocol::RegisterReceiveCallBack  Begin--------------------
+[2026-04-03 19:24:06:437] --------------------CIProtocol::RegisterReceiveCallBack  End  --------------------
+[2026-04-03 19:24:06:437] --------------------CProtocolComNative::Open  Begin--------------------
+[2026-04-03 19:24:06:437] com:COM1
+[2026-04-03 19:24:06:437] m_baudrate=115200, m_dataBit=0, m_checkBit=8, m_stopBit=0
+[2026-04-03 19:24:06:437] CSerialPort::OpenCom success
+[2026-04-03 19:24:06:453] --------------------CProtocolComNative::Open  End  --------------------
+[2026-04-03 19:24:06:453] CTaskExecution::CProtocolCom:Open com success, comName = COM1
+[2026-04-03 19:24:06:453] start DoStart before
+[2026-04-03 19:24:06:453] --------------------CTaskExecution::OpenCom  End  --------------------
+[2026-04-03 19:24:06:453] OpenCom end
+[2026-04-03 19:24:08:231] --------------------CMainDlg::DoSystemTestSendCmd  Begin--------------------
+[2026-04-03 19:24:08:231] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:24:08:247] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:24:08:262] DoSystemTestSendCmd begin
+[2026-04-03 19:24:08:262] send:1B1B1B1B1B0A1B0A420100000029FFA440302E2F,len=1626555
+[2026-04-03 19:24:08:262] WriteFile before
+[2026-04-03 19:24:08:262] WriteFile after:writeLen=20
+[2026-04-03 19:24:08:262] wait ack:m_ackKey=0029_0000
+[2026-04-03 19:24:12:880] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:24:12:880] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:24:12:880] CIProtocol::Stop enter
+[2026-04-03 19:24:12:911] start DoStart after
+[2026-04-03 19:24:12:911] CIProtocol::Stop leave
+[2026-04-03 19:24:12:927] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:24:12:927] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:24:13:270] [ERROR]CTransmission::SendData<164>:wait ack timeout
+[2026-04-03 19:24:13:270] [ERROR]CTaskExecution::DoSystemTestSendCmd<944>:m_transmission.SendData failed
+[2026-04-03 19:24:13:270] DoSystemTestSendCmd end
+[2026-04-03 19:24:13:286] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:24:13:286] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:24:14:752] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:24:19:182] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:24:19:182] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:24:19:182] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:24:19:198] OpenCom begin
+[2026-04-03 19:24:19:198] --------------------CTaskExecution::OpenCom  Begin--------------------
+[2026-04-03 19:24:19:198] --------------------CIProtocol::RegisterReceiveCallBack  Begin--------------------
+[2026-04-03 19:24:19:198] --------------------CIProtocol::RegisterReceiveCallBack  End  --------------------
+[2026-04-03 19:24:19:198] --------------------CProtocolComNative::Open  Begin--------------------
+[2026-04-03 19:24:19:198] com:COM5
+[2026-04-03 19:24:19:198] m_baudrate=115200, m_dataBit=0, m_checkBit=8, m_stopBit=0
+[2026-04-03 19:24:19:198] CSerialPort::OpenCom success
+[2026-04-03 19:24:19:214] --------------------CProtocolComNative::Open  End  --------------------
+[2026-04-03 19:24:19:214] CTaskExecution::CProtocolCom:Open com success, comName = COM5
+[2026-04-03 19:24:19:214] start DoStart before
+[2026-04-03 19:24:19:214] --------------------CTaskExecution::OpenCom  End  --------------------
+[2026-04-03 19:24:19:214] OpenCom end
+[2026-04-03 19:24:20:602] --------------------CMainDlg::DoSystemTestSendCmd  Begin--------------------
+[2026-04-03 19:24:20:618] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:24:20:618] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:24:20:649] DoSystemTestSendCmd begin
+[2026-04-03 19:24:20:649] send:1B1B1B1B1B0A1B0A420100000029FFA440302E2F,len=1626555
+[2026-04-03 19:24:20:664] WriteFile before
+[2026-04-03 19:24:20:664] WriteFile after:writeLen=20
+[2026-04-03 19:24:20:664] wait ack:m_ackKey=0029_0000
+[2026-04-03 19:24:25:672] [ERROR]CTransmission::SendData<164>:wait ack timeout
+[2026-04-03 19:24:25:672] [ERROR]CTaskExecution::DoSystemTestSendCmd<944>:m_transmission.SendData failed
+[2026-04-03 19:24:25:672] DoSystemTestSendCmd end
+[2026-04-03 19:24:28:355] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:24:28:355] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:24:28:371] CIProtocol::Stop enter
+[2026-04-03 19:24:28:386] start DoStart after
+[2026-04-03 19:24:28:386] CIProtocol::Stop leave
+[2026-04-03 19:24:28:402] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:24:28:402] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:24:28:402] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:24:28:418] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:24:29:057] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:24:34:081] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:24:34:081] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:24:34:081] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:24:34:096] OpenCom begin
+[2026-04-03 19:24:34:096] --------------------CTaskExecution::OpenCom  Begin--------------------
+[2026-04-03 19:24:34:096] --------------------CIProtocol::RegisterReceiveCallBack  Begin--------------------
+[2026-04-03 19:24:34:096] --------------------CIProtocol::RegisterReceiveCallBack  End  --------------------
+[2026-04-03 19:24:34:096] --------------------CProtocolComNative::Open  Begin--------------------
+[2026-04-03 19:24:34:096] com:COM6
+[2026-04-03 19:24:34:096] m_baudrate=115200, m_dataBit=0, m_checkBit=8, m_stopBit=0
+[2026-04-03 19:24:34:096] CSerialPort::OpenCom success
+[2026-04-03 19:24:34:112] --------------------CProtocolComNative::Open  End  --------------------
+[2026-04-03 19:24:34:112] CTaskExecution::CProtocolCom:Open com success, comName = COM6
+[2026-04-03 19:24:34:112] start DoStart before
+[2026-04-03 19:24:34:112] --------------------CTaskExecution::OpenCom  End  --------------------
+[2026-04-03 19:24:34:112] OpenCom end
+[2026-04-03 19:24:36:046] --------------------CMainDlg::DoSystemTestSendCmd  Begin--------------------
+[2026-04-03 19:24:36:046] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:24:36:062] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:24:36:077] DoSystemTestSendCmd begin
+[2026-04-03 19:24:36:077] send:1B1B1B1B1B0A1B0A420100000029FFA440302E2F,len=1626555
+[2026-04-03 19:24:36:093] WriteFile before
+[2026-04-03 19:24:36:093] WriteFile after:writeLen=20
+[2026-04-03 19:24:36:093] wait ack:m_ackKey=0029_0000
+[2026-04-03 19:24:41:101] [ERROR]CTransmission::SendData<164>:wait ack timeout
+[2026-04-03 19:24:41:101] [ERROR]CTaskExecution::DoSystemTestSendCmd<944>:m_transmission.SendData failed
+[2026-04-03 19:24:41:101] DoSystemTestSendCmd end
+[2026-04-03 19:24:41:896] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:24:41:896] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:24:41:912] CIProtocol::Stop enter
+[2026-04-03 19:24:41:943] start DoStart after
+[2026-04-03 19:24:41:943] CIProtocol::Stop leave
+[2026-04-03 19:24:41:959] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:24:41:959] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:24:41:959] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:24:41:974] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:24:42:583] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:24:47:419] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:24:47:419] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:24:47:419] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:24:47:434] OpenCom begin
+[2026-04-03 19:24:47:434] --------------------CTaskExecution::OpenCom  Begin--------------------
+[2026-04-03 19:24:47:434] --------------------CIProtocol::RegisterReceiveCallBack  Begin--------------------
+[2026-04-03 19:24:47:434] --------------------CIProtocol::RegisterReceiveCallBack  End  --------------------
+[2026-04-03 19:24:47:434] --------------------CProtocolComNative::Open  Begin--------------------
+[2026-04-03 19:24:47:434] com:COM4
+[2026-04-03 19:24:47:434] m_baudrate=115200, m_dataBit=0, m_checkBit=8, m_stopBit=0
+[2026-04-03 19:24:47:434] CSerialPort::OpenCom success
+[2026-04-03 19:24:47:434] --------------------CProtocolComNative::Open  End  --------------------
+[2026-04-03 19:24:47:434] CTaskExecution::CProtocolCom:Open com success, comName = COM4
+[2026-04-03 19:24:47:450] start DoStart before
+[2026-04-03 19:24:47:450] --------------------CTaskExecution::OpenCom  End  --------------------
+[2026-04-03 19:24:47:450] OpenCom end
+[2026-04-03 19:24:48:495] --------------------CMainDlg::DoSystemTestSendCmd  Begin--------------------
+[2026-04-03 19:24:48:495] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:24:48:511] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:24:48:511] DoSystemTestSendCmd begin
+[2026-04-03 19:24:48:511] send:1B1B1B1B1B0A1B0A420100000029FFA440302E2F,len=1626555
+[2026-04-03 19:24:48:526] WriteFile before
+[2026-04-03 19:24:48:526] WriteFile after:writeLen=20
+[2026-04-03 19:24:48:526] wait ack:m_ackKey=0029_0000
+[2026-04-03 19:24:53:534] [ERROR]CTransmission::SendData<164>:wait ack timeout
+[2026-04-03 19:24:53:534] [ERROR]CTaskExecution::DoSystemTestSendCmd<944>:m_transmission.SendData failed
+[2026-04-03 19:24:53:534] DoSystemTestSendCmd end
+[2026-04-03 19:24:56:077] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:24:56:092] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:24:56:092] CIProtocol::Stop enter
+[2026-04-03 19:24:56:123] start DoStart after
+[2026-04-03 19:24:56:123] CIProtocol::Stop leave
+[2026-04-03 19:24:56:139] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:24:56:139] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:24:56:139] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:24:56:155] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:24:56:825] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:25:00:632] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:25:00:632] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:25:00:647] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:25:00:663] OpenCom begin
+[2026-04-03 19:25:00:663] --------------------CTaskExecution::OpenCom  Begin--------------------
+[2026-04-03 19:25:00:663] --------------------CIProtocol::RegisterReceiveCallBack  Begin--------------------
+[2026-04-03 19:25:00:663] --------------------CIProtocol::RegisterReceiveCallBack  End  --------------------
+[2026-04-03 19:25:00:663] --------------------CProtocolComNative::Open  Begin--------------------
+[2026-04-03 19:25:00:663] com:COM3
+[2026-04-03 19:25:00:663] m_baudrate=115200, m_dataBit=0, m_checkBit=8, m_stopBit=0
+[2026-04-03 19:25:00:663] CSerialPort::OpenCom success
+[2026-04-03 19:25:00:663] --------------------CProtocolComNative::Open  End  --------------------
+[2026-04-03 19:25:00:663] CTaskExecution::CProtocolCom:Open com success, comName = COM3
+[2026-04-03 19:25:00:679] start DoStart before
+[2026-04-03 19:25:00:679] --------------------CTaskExecution::OpenCom  End  --------------------
+[2026-04-03 19:25:00:679] OpenCom end
+[2026-04-03 19:25:01:958] --------------------CMainDlg::DoSystemTestSendCmd  Begin--------------------
+[2026-04-03 19:25:01:958] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:25:01:973] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:25:01:989] DoSystemTestSendCmd begin
+[2026-04-03 19:25:01:989] send:1B1B1B1B1B0A1B0A420100000029FFA440302E2F,len=1626555
+[2026-04-03 19:25:01:989] WriteFile before
+[2026-04-03 19:25:01:989] WriteFile after:writeLen=20
+[2026-04-03 19:25:01:989] wait ack:m_ackKey=0029_0000
+[2026-04-03 19:25:06:997] [ERROR]CTransmission::SendData<164>:wait ack timeout
+[2026-04-03 19:25:06:997] [ERROR]CTaskExecution::DoSystemTestSendCmd<944>:m_transmission.SendData failed
+[2026-04-03 19:25:06:997] DoSystemTestSendCmd end
+[2026-04-03 19:25:11:255] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:25:11:271] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:25:11:271] CIProtocol::Stop enter
+[2026-04-03 19:25:11:287] start DoStart after
+[2026-04-03 19:25:11:287] CIProtocol::Stop leave
+[2026-04-03 19:25:11:302] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:25:11:302] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:25:11:318] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:25:11:318] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:25:12:191] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:25:16:232] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:25:16:232] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:25:16:232] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:25:16:263] OpenCom begin
+[2026-04-03 19:25:16:263] --------------------CTaskExecution::OpenCom  Begin--------------------
+[2026-04-03 19:25:16:263] --------------------CIProtocol::RegisterReceiveCallBack  Begin--------------------
+[2026-04-03 19:25:16:263] --------------------CIProtocol::RegisterReceiveCallBack  End  --------------------
+[2026-04-03 19:25:16:263] --------------------CProtocolComNative::Open  Begin--------------------
+[2026-04-03 19:25:16:263] com:COM2
+[2026-04-03 19:25:16:263] m_baudrate=115200, m_dataBit=0, m_checkBit=8, m_stopBit=0
+[2026-04-03 19:25:16:263] CSerialPort::OpenCom success
+[2026-04-03 19:25:16:263] --------------------CProtocolComNative::Open  End  --------------------
+[2026-04-03 19:25:16:263] CTaskExecution::CProtocolCom:Open com success, comName = COM2
+[2026-04-03 19:25:16:263] start DoStart before
+[2026-04-03 19:25:16:263] --------------------CTaskExecution::OpenCom  End  --------------------
+[2026-04-03 19:25:16:279] OpenCom end
+[2026-04-03 19:25:17:308] --------------------CMainDlg::DoSystemTestSendCmd  Begin--------------------
+[2026-04-03 19:25:17:324] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:25:17:324] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:25:17:339] DoSystemTestSendCmd begin
+[2026-04-03 19:25:17:339] send:1B1B1B1B1B0A1B0A420100000029FFA440302E2F,len=1626555
+[2026-04-03 19:25:17:339] WriteFile before
+[2026-04-03 19:25:17:339] WriteFile after:writeLen=20
+[2026-04-03 19:25:17:339] wait ack:m_ackKey=0029_0000
+[2026-04-03 19:25:22:347] [ERROR]CTransmission::SendData<164>:wait ack timeout
+[2026-04-03 19:25:22:347] [ERROR]CTaskExecution::DoSystemTestSendCmd<944>:m_transmission.SendData failed
+[2026-04-03 19:25:22:347] DoSystemTestSendCmd end
+[2026-04-03 19:25:26:590] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:25:26:590] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:25:26:590] CIProtocol::Stop enter
+[2026-04-03 19:25:26:621] start DoStart after
+[2026-04-03 19:25:26:621] CIProtocol::Stop leave
+[2026-04-03 19:25:26:637] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:25:26:637] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:25:26:637] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:25:26:653] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:25:36:657] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:25:40:635] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:25:40:635] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:25:40:635] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:25:40:651] OpenCom begin
+[2026-04-03 19:25:40:651] --------------------CTaskExecution::OpenCom  Begin--------------------
+[2026-04-03 19:25:40:651] --------------------CIProtocol::RegisterReceiveCallBack  Begin--------------------
+[2026-04-03 19:25:40:651] --------------------CIProtocol::RegisterReceiveCallBack  End  --------------------
+[2026-04-03 19:25:40:651] --------------------CProtocolComNative::Open  Begin--------------------
+[2026-04-03 19:25:40:651] com:COM5
+[2026-04-03 19:25:40:651] m_baudrate=115200, m_dataBit=0, m_checkBit=8, m_stopBit=0
+[2026-04-03 19:25:40:651] CSerialPort::OpenCom success
+[2026-04-03 19:25:40:651] --------------------CProtocolComNative::Open  End  --------------------
+[2026-04-03 19:25:40:651] CTaskExecution::CProtocolCom:Open com success, comName = COM5
+[2026-04-03 19:25:40:651] start DoStart before
+[2026-04-03 19:25:40:667] --------------------CTaskExecution::OpenCom  End  --------------------
+[2026-04-03 19:25:40:667] OpenCom end
+[2026-04-03 19:25:42:164] --------------------CMainDlg::DoQueryModuleMac  Begin--------------------
+[2026-04-03 19:25:42:180] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:25:42:180] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:25:42:180] --------------------CMainDlg::DoQueryModuleMac  End  --------------------
+[2026-04-03 19:25:42:195] OnShowLoadingMessage before
+[2026-04-03 19:25:42:195] DoGeneralServicesTest begin
+[2026-04-03 19:25:42:195] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:25:42:211] send:1B1B1B1B1B0A1B0A42010100002DFFA540302E2F32,len=1626331
+[2026-04-03 19:25:42:211] WriteFile before
+[2026-04-03 19:25:42:211] WriteFile after:writeLen=21
+[2026-04-03 19:25:42:211] wait ack:m_ackKey=002D_0100
+[2026-04-03 19:25:47:219] [ERROR]CTransmission::SendData<164>:wait ack timeout
+[2026-04-03 19:25:47:219] [ERROR]CTaskExecution::DoGeneralServicesTest<1704>:m_transmission.SendData failed
+[2026-04-03 19:25:47:219] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:25:47:234] DoGeneralServicesTest end
+[2026-04-03 19:25:47:234] OnShowLoadingMessage before
+[2026-04-03 19:25:47:234] OnShowLoadingMessage after
+[2026-04-03 19:25:47:250] OnShowLoadingMessage after
+[2026-04-03 19:25:55:409] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:25:55:409] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:25:55:409] CIProtocol::Stop enter
+[2026-04-03 19:25:55:424] start DoStart after
+[2026-04-03 19:25:55:424] CIProtocol::Stop leave
+[2026-04-03 19:25:55:440] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:25:55:440] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 19:25:55:440] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 19:25:55:455] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:25:56:220] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:39:28:675] ###################################################
+[2026-04-03 19:39:28:675] #                                                 #
+[2026-04-03 19:39:28:675] #             PLBUS Test tool START               #
+[2026-04-03 19:39:28:675] #                                                 #
+[2026-04-03 19:39:28:691] ###################################################
+[2026-04-03 19:39:30:313] --------------------CUtil::GetAuthenticationCode  Begin--------------------
+[2026-04-03 19:39:30:329] user=LME
+[2026-04-03 19:39:30:344] --------------------CUtil::GetAuthenticationCode  End  --------------------
+[2026-04-03 19:39:30:438] --------------------CTaskExecution::StartWork  Begin--------------------
+[2026-04-03 19:39:30:438] --------------------CTaskExecution::StartWork  End  --------------------
+[2026-04-03 19:39:30:469] =03BB6770
+[2026-04-03 19:39:30:469] =0106D490
+[2026-04-03 19:39:30:469] =03C5EC48
+[2026-04-03 19:39:30:469] =0775FB18
+[2026-04-03 19:39:30:485] =0778BE60
+[2026-04-03 19:39:30:485] =077A1708
+[2026-04-03 19:39:30:485] =077A9158
+[2026-04-03 19:39:30:485] =077C11B0
+[2026-04-03 19:39:30:563] =07921138
+[2026-04-03 19:39:30:563] =07921C78
+[2026-04-03 19:39:30:578] =079227B8
+[2026-04-03 19:39:30:578] --------------------CMainDlg::InitDevTestUI  Begin--------------------
+[2026-04-03 19:39:30:578] --------------------CMainDlg::InitDevTestUI  End  --------------------
+[2026-04-03 19:39:32:528] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 19:39:38:800] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:39:38:800] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:39:38:800] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 19:39:38:831] OpenCom begin
+[2026-04-03 19:39:38:831] --------------------CTaskExecution::OpenCom  Begin--------------------
+[2026-04-03 19:39:38:831] --------------------CIProtocol::RegisterReceiveCallBack  Begin--------------------
+[2026-04-03 19:39:38:831] --------------------CIProtocol::RegisterReceiveCallBack  End  --------------------
+[2026-04-03 19:39:38:831] --------------------CProtocolComNative::Open  Begin--------------------
+[2026-04-03 19:39:38:831] com:COM7
+[2026-04-03 19:39:38:831] m_baudrate=115200, m_dataBit=0, m_checkBit=8, m_stopBit=0
+[2026-04-03 19:39:38:909] CSerialPort::OpenCom success
+[2026-04-03 19:39:38:909] --------------------CProtocolComNative::Open  End  --------------------
+[2026-04-03 19:39:38:924] CTaskExecution::CProtocolCom:Open com success, comName = COM7
+[2026-04-03 19:39:38:924] start DoStart before
+[2026-04-03 19:39:38:940] --------------------CTaskExecution::OpenCom  End  --------------------
+[2026-04-03 19:39:38:940] OpenCom end
+[2026-04-03 19:39:43:121] --------------------CMainDlg::DoQueryModuleInfo  Begin--------------------
+[2026-04-03 19:39:43:121] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:39:43:136] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:39:43:136] --------------------CMainDlg::DoQueryModuleInfo  End  --------------------
+[2026-04-03 19:39:43:152] OnShowLoadingMessage before
+[2026-04-03 19:39:43:152] DoGeneralServicesTest begin
+[2026-04-03 19:39:43:152] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:39:43:168] send:1B1B1B1B1B0A1B0A420100000029FFA540302E2F31,len=-1763865740
+[2026-04-03 19:39:43:168] WriteFile before
+[2026-04-03 19:39:43:168] WriteFile after:writeLen=21
+[2026-04-03 19:39:43:168] wait ack:m_ackKey=0029_0000
+[2026-04-03 19:39:43:199] ReadFile before
+[2026-04-03 19:39:43:214] ReadFile after
+[2026-04-03 19:39:43:214] recv:1B1B1B1B1B0A1B0A624500000029FFB110FF01020002030120241224010B4E01004C5A001F884E0000
+[2026-04-03 19:39:43:261] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:39:43:261] Match:token=0029,msgId=0000
+[2026-04-03 19:39:43:261] SetEvent
+[2026-04-03 19:39:43:261] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:39:43:261] get ack
+[2026-04-03 19:39:43:261] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:39:43:261] DoGeneralServicesTest end
+[2026-04-03 19:39:43:261] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 19:39:43:261] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  End  --------------------
+[2026-04-03 19:39:43:277] OnShowLoadingMessage before
+[2026-04-03 19:39:43:277] OnShowLoadingMessage after
+[2026-04-03 19:39:43:277] OnShowLoadingMessage after
+[2026-04-03 19:39:48:612] --------------------CMainDlg::DoQueryModuleMac  Begin--------------------
+[2026-04-03 19:39:48:612] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:39:48:628] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:39:48:628] DoGeneralServicesTest begin
+[2026-04-03 19:39:48:628] --------------------CMainDlg::DoQueryModuleMac  End  --------------------
+[2026-04-03 19:39:48:628] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:39:48:628] OnShowLoadingMessage before
+[2026-04-03 19:39:48:643] send:1B1B1B1B1B0A1B0A42010100002DFFA540302E2F32,len=-1763865740
+[2026-04-03 19:39:48:643] WriteFile before
+[2026-04-03 19:39:48:643] WriteFile after:writeLen=21
+[2026-04-03 19:39:48:643] wait ack:m_ackKey=002D_0100
+[2026-04-03 19:39:48:675] ReadFile before
+[2026-04-03 19:39:48:690] ReadFile after
+[2026-04-03 19:39:48:690] recv:1B1B1B1B1B0A1B0A62450100002DFFB110FF4C5A001F884E
+[2026-04-03 19:39:48:737] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:39:48:737] Match:token=002D,msgId=0100
+[2026-04-03 19:39:48:737] SetEvent
+[2026-04-03 19:39:48:737] get ack
+[2026-04-03 19:39:48:737] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:39:48:737] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:39:48:737] DoGeneralServicesTest end
+[2026-04-03 19:39:48:737] OnShowLoadingMessage before
+[2026-04-03 19:39:48:737] OnShowLoadingMessage after
+[2026-04-03 19:39:48:753] OnShowLoadingMessage after
+[2026-04-03 19:39:52:481] --------------------CMainDlg::DoRefreshSystemTestCmd  Begin--------------------
+[2026-04-03 19:39:52:481] --------------------CMainDlg::DoRefreshSystemTestCmd  End  --------------------
+[2026-04-03 19:40:06:037] --------------------CMainDlg::DoRefreshSystemTestCmd  Begin--------------------
+[2026-04-03 19:40:06:037] --------------------CMainDlg::DoRefreshSystemTestCmd  End  --------------------
+[2026-04-03 19:40:16:895] --------------------CMainDlg::DoQueryModuleMac  Begin--------------------
+[2026-04-03 19:40:16:895] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:40:16:895] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:40:16:911] --------------------CMainDlg::DoQueryModuleMac  End  --------------------
+[2026-04-03 19:40:16:911] OnShowLoadingMessage before
+[2026-04-03 19:40:16:911] DoGeneralServicesTest begin
+[2026-04-03 19:40:16:911] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:40:16:911] send:1B1B1B1B1B0A1B0A420104000036FFA540302E2F32,len=-1763865740
+[2026-04-03 19:40:16:911] WriteFile before
+[2026-04-03 19:40:16:911] WriteFile after:writeLen=21
+[2026-04-03 19:40:16:911] wait ack:m_ackKey=0036_0400
+[2026-04-03 19:40:16:957] ReadFile before
+[2026-04-03 19:40:16:973] ReadFile after
+[2026-04-03 19:40:16:973] recv:1B1B1B1B1B0A1B0A624504000036FFB110FF4C5A001F884E
+[2026-04-03 19:40:17:020] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:40:17:020] Match:token=0036,msgId=0400
+[2026-04-03 19:40:17:020] SetEvent
+[2026-04-03 19:40:17:020] get ack
+[2026-04-03 19:40:17:020] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:40:17:020] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:40:17:020] DoGeneralServicesTest end
+[2026-04-03 19:40:17:020] OnShowLoadingMessage before
+[2026-04-03 19:40:17:020] OnShowLoadingMessage after
+[2026-04-03 19:40:17:035] OnShowLoadingMessage after
+[2026-04-03 19:40:27:363] --------------------CMainDlg::DoRefreshSystemTestCmd  Begin--------------------
+[2026-04-03 19:40:27:363] --------------------CMainDlg::DoRefreshSystemTestCmd  End  --------------------
+[2026-04-03 19:40:35:787] --------------------CMainDlg::DoSystemTestSendCmd  Begin--------------------
+[2026-04-03 19:40:35:787] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:40:35:787] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:40:35:802] DoSystemTestSendCmd begin
+[2026-04-03 19:40:35:802] send:1B1B1B1B1B0A1B0A42010500003AFFA440302E2F,len=-1763865196
+[2026-04-03 19:40:35:802] WriteFile before
+[2026-04-03 19:40:35:802] WriteFile after:writeLen=20
+[2026-04-03 19:40:35:802] wait ack:m_ackKey=003A_0500
+[2026-04-03 19:40:35:833] ReadFile before
+[2026-04-03 19:40:35:849] ReadFile after
+[2026-04-03 19:40:35:849] recv:1B1B1B1B1B0A1B0A62840500003A
+[2026-04-03 19:40:35:896] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:40:35:896] Match:token=003A,msgId=0500
+[2026-04-03 19:40:35:896] SetEvent
+[2026-04-03 19:40:35:896] get ack
+[2026-04-03 19:40:35:896] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:40:35:896] DoSystemTestSendCmd end
+[2026-04-03 19:40:57:923] --------------------CMainDlg::DoQueryModuleSnid  Begin--------------------
+[2026-04-03 19:40:57:923] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:40:57:939] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:40:57:939] --------------------CMainDlg::DoQueryModuleSnid  End  --------------------
+[2026-04-03 19:40:57:939] OnShowLoadingMessage before
+[2026-04-03 19:40:57:939] DoGeneralServicesTest begin
+[2026-04-03 19:40:57:939] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:40:57:939] send:1B1B1B1B1B0A1B0A42010600003DFFA740302E2F332F31,len=-1763865740
+[2026-04-03 19:40:57:954] WriteFile before
+[2026-04-03 19:40:57:954] WriteFile after:writeLen=23
+[2026-04-03 19:40:57:954] wait ack:m_ackKey=003D_0600
+[2026-04-03 19:40:57:985] ReadFile before
+[2026-04-03 19:40:58:001] ReadFile after
+[2026-04-03 19:40:58:001] recv:1B1B1B1B1B0A1B0A62450600003DFFB110FF0000
+[2026-04-03 19:40:58:048] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:40:58:048] Match:token=003D,msgId=0600
+[2026-04-03 19:40:58:048] SetEvent
+[2026-04-03 19:40:58:048] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:40:58:048] get ack
+[2026-04-03 19:40:58:048] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:40:58:048] DoGeneralServicesTest end
+[2026-04-03 19:40:58:048] OnShowLoadingMessage before
+[2026-04-03 19:40:58:048] OnShowLoadingMessage after
+[2026-04-03 19:40:58:063] OnShowLoadingMessage after
+[2026-04-03 19:41:05:739] --------------------CMainDlg::DoQueryModuleSnid  Begin--------------------
+[2026-04-03 19:41:05:754] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:41:05:754] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:41:05:754] --------------------CMainDlg::DoQueryModuleSnid  End  --------------------
+[2026-04-03 19:41:05:754] OnShowLoadingMessage before
+[2026-04-03 19:41:05:754] DoGeneralServicesTest begin
+[2026-04-03 19:41:05:754] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:41:05:754] send:1B1B1B1B1B0A1B0A420107000040FFA740302E2F332F31,len=-1763865740
+[2026-04-03 19:41:05:754] WriteFile before
+[2026-04-03 19:41:05:770] WriteFile after:writeLen=23
+[2026-04-03 19:41:05:770] wait ack:m_ackKey=0040_0700
+[2026-04-03 19:41:05:801] ReadFile before
+[2026-04-03 19:41:05:817] ReadFile after
+[2026-04-03 19:41:05:817] recv:1B1B1B1B1B0A1B0A624507000040FFB110FF0000
+[2026-04-03 19:41:05:863] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:41:05:863] Match:token=0040,msgId=0700
+[2026-04-03 19:41:05:863] SetEvent
+[2026-04-03 19:41:05:863] get ack
+[2026-04-03 19:41:05:863] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:41:05:863] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:41:05:863] DoGeneralServicesTest end
+[2026-04-03 19:41:05:863] OnShowLoadingMessage before
+[2026-04-03 19:41:05:879] OnShowLoadingMessage after
+[2026-04-03 19:41:05:879] OnShowLoadingMessage after
+[2026-04-03 19:41:17:673] --------------------CMainDlg::DoQueryModuleInfo  Begin--------------------
+[2026-04-03 19:41:17:688] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:41:17:688] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:41:17:704] --------------------CMainDlg::DoQueryModuleInfo  End  --------------------
+[2026-04-03 19:41:17:704] DoGeneralServicesTest begin
+[2026-04-03 19:41:17:704] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:41:17:704] send:1B1B1B1B1B0A1B0A420108000044FFA540302E2F31,len=-1763865740
+[2026-04-03 19:41:17:704] WriteFile before
+[2026-04-03 19:41:17:719] WriteFile after:writeLen=21
+[2026-04-03 19:41:17:719] wait ack:m_ackKey=0044_0800
+[2026-04-03 19:41:17:719] OnShowLoadingMessage before
+[2026-04-03 19:41:17:751] ReadFile before
+[2026-04-03 19:41:17:766] ReadFile after
+[2026-04-03 19:41:17:766] recv:1B1B1B1B1B0A1B0A624508000044FFB110FF01020002030120241224010B4E01004C5A001F884E0000
+[2026-04-03 19:41:17:813] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:41:17:813] Match:token=0044,msgId=0800
+[2026-04-03 19:41:17:813] SetEvent
+[2026-04-03 19:41:17:813] get ack
+[2026-04-03 19:41:17:813] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:41:17:813] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:41:17:813] DoGeneralServicesTest end
+[2026-04-03 19:41:17:813] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 19:41:17:813] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  End  --------------------
+[2026-04-03 19:41:17:829] OnShowLoadingMessage before
+[2026-04-03 19:41:17:829] OnShowLoadingMessage after
+[2026-04-03 19:41:17:829] OnShowLoadingMessage after
+[2026-04-03 19:42:27:108] --------------------CMainDlg::DoRefreshSystemTestCmd  Begin--------------------
+[2026-04-03 19:42:27:108] --------------------CMainDlg::DoRefreshSystemTestCmd  End  --------------------
+[2026-04-03 19:42:32:943] --------------------CMainDlg::DoRefreshSystemTestCmd  Begin--------------------
+[2026-04-03 19:42:32:943] --------------------CMainDlg::DoRefreshSystemTestCmd  End  --------------------
+[2026-04-03 19:42:50:352] --------------------CMainDlg::DoQueryModuleSnid  Begin--------------------
+[2026-04-03 19:42:50:352] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:42:50:368] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:42:50:368] --------------------CMainDlg::DoQueryModuleSnid  End  --------------------
+[2026-04-03 19:42:50:368] OnShowLoadingMessage before
+[2026-04-03 19:42:50:384] DoGeneralServicesTest begin
+[2026-04-03 19:42:50:384] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:42:50:384] send:1B1B1B1B1B0A1B0A42010B00004DFFA740302E2F332F31,len=-1763865740
+[2026-04-03 19:42:50:399] WriteFile before
+[2026-04-03 19:42:50:399] WriteFile after:writeLen=23
+[2026-04-03 19:42:50:399] wait ack:m_ackKey=004D_0B00
+[2026-04-03 19:42:50:430] ReadFile before
+[2026-04-03 19:42:50:446] ReadFile after
+[2026-04-03 19:42:50:446] recv:1B1B1B1B1B0A1B0A62450B00004DFFB110FF0000
+[2026-04-03 19:42:50:493] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:42:50:493] Match:token=004D,msgId=0B00
+[2026-04-03 19:42:50:493] SetEvent
+[2026-04-03 19:42:50:493] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:42:50:493] get ack
+[2026-04-03 19:42:50:493] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:42:50:493] DoGeneralServicesTest end
+[2026-04-03 19:42:50:493] OnShowLoadingMessage before
+[2026-04-03 19:42:50:493] OnShowLoadingMessage after
+[2026-04-03 19:42:50:508] OnShowLoadingMessage after
+[2026-04-03 19:42:59:213] --------------------CMainDlg::DoQueryModuleSnid  Begin--------------------
+[2026-04-03 19:42:59:213] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:42:59:213] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:42:59:229] --------------------CMainDlg::DoQueryModuleSnid  End  --------------------
+[2026-04-03 19:42:59:229] DoGeneralServicesTest begin
+[2026-04-03 19:42:59:229] OnShowLoadingMessage before
+[2026-04-03 19:42:59:229] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:42:59:229] send:1B1B1B1B1B0A1B0A42010C000051FFA740302E2F332F31,len=-1763865740
+[2026-04-03 19:42:59:244] WriteFile before
+[2026-04-03 19:42:59:244] WriteFile after:writeLen=23
+[2026-04-03 19:42:59:244] wait ack:m_ackKey=0051_0C00
+[2026-04-03 19:42:59:276] ReadFile before
+[2026-04-03 19:42:59:291] ReadFile after
+[2026-04-03 19:42:59:291] recv:1B1B1B1B1B0A1B0A62450C000051FFB110FF0000
+[2026-04-03 19:42:59:338] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:42:59:338] Match:token=0051,msgId=0C00
+[2026-04-03 19:42:59:338] SetEvent
+[2026-04-03 19:42:59:338] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:42:59:338] get ack
+[2026-04-03 19:42:59:338] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:42:59:338] DoGeneralServicesTest end
+[2026-04-03 19:42:59:338] OnShowLoadingMessage before
+[2026-04-03 19:42:59:338] OnShowLoadingMessage after
+[2026-04-03 19:42:59:354] OnShowLoadingMessage after
+[2026-04-03 19:43:16:779] --------------------CMainDlg::DoQueryModuleMac  Begin--------------------
+[2026-04-03 19:43:16:794] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:43:16:794] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:43:16:794] --------------------CMainDlg::DoQueryModuleMac  End  --------------------
+[2026-04-03 19:43:16:794] OnShowLoadingMessage before
+[2026-04-03 19:43:16:810] DoGeneralServicesTest begin
+[2026-04-03 19:43:16:810] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:43:16:810] send:1B1B1B1B1B0A1B0A42010D000054FFA540302E2F32,len=-1763865740
+[2026-04-03 19:43:16:826] WriteFile before
+[2026-04-03 19:43:16:826] WriteFile after:writeLen=21
+[2026-04-03 19:43:16:826] wait ack:m_ackKey=0054_0D00
+[2026-04-03 19:43:16:857] ReadFile before
+[2026-04-03 19:43:16:872] ReadFile after
+[2026-04-03 19:43:16:872] recv:1B1B1B1B1B0A1B0A62450D000054FFB110FF4C5A001F884E
+[2026-04-03 19:43:16:919] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:43:16:919] Match:token=0054,msgId=0D00
+[2026-04-03 19:43:16:919] SetEvent
+[2026-04-03 19:43:16:919] get ack
+[2026-04-03 19:43:16:919] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:43:16:919] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:43:16:919] DoGeneralServicesTest end
+[2026-04-03 19:43:16:919] OnShowLoadingMessage before
+[2026-04-03 19:43:16:919] OnShowLoadingMessage after
+[2026-04-03 19:43:16:935] OnShowLoadingMessage after
+[2026-04-03 19:43:22:036] --------------------CMainDlg::DoQueryModuleMac  Begin--------------------
+[2026-04-03 19:43:22:052] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:43:22:052] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:43:22:052] --------------------CMainDlg::DoQueryModuleMac  End  --------------------
+[2026-04-03 19:43:22:067] OnShowLoadingMessage before
+[2026-04-03 19:43:22:067] DoGeneralServicesTest begin
+[2026-04-03 19:43:22:083] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:43:22:083] send:1B1B1B1B1B0A1B0A42010E000057FFA540302E2F32,len=-1763865740
+[2026-04-03 19:43:22:083] WriteFile before
+[2026-04-03 19:43:22:083] WriteFile after:writeLen=21
+[2026-04-03 19:43:22:098] wait ack:m_ackKey=0057_0E00
+[2026-04-03 19:43:22:114] ReadFile before
+[2026-04-03 19:43:22:130] ReadFile after
+[2026-04-03 19:43:22:130] recv:1B1B1B1B1B0A1B0A62450E000057FFB110FF4C5A001F884E
+[2026-04-03 19:43:22:176] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:43:22:176] Match:token=0057,msgId=0E00
+[2026-04-03 19:43:22:176] SetEvent
+[2026-04-03 19:43:22:176] get ack
+[2026-04-03 19:43:22:176] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:43:22:176] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:43:22:176] DoGeneralServicesTest end
+[2026-04-03 19:43:22:176] OnShowLoadingMessage before
+[2026-04-03 19:43:22:176] OnShowLoadingMessage after
+[2026-04-03 19:43:22:192] OnShowLoadingMessage after
+[2026-04-03 19:44:13:735] --------------------CMainDlg::DoQueryModuleMac  Begin--------------------
+[2026-04-03 19:44:13:750] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:44:13:750] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:44:13:750] --------------------CMainDlg::DoQueryModuleMac  End  --------------------
+[2026-04-03 19:44:13:766] DoGeneralServicesTest begin
+[2026-04-03 19:44:13:766] OnShowLoadingMessage before
+[2026-04-03 19:44:13:766] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:44:13:766] send:1B1B1B1B1B0A1B0A42010F00005AFFA540302E2F32,len=-1763865740
+[2026-04-03 19:44:13:766] WriteFile before
+[2026-04-03 19:44:13:781] WriteFile after:writeLen=21
+[2026-04-03 19:44:13:781] wait ack:m_ackKey=005A_0F00
+[2026-04-03 19:44:13:813] ReadFile before
+[2026-04-03 19:44:13:828] ReadFile after
+[2026-04-03 19:44:13:828] recv:1B1B1B1B1B0A1B0A62450F00005AFFB110FF4C5A001F884E
+[2026-04-03 19:44:13:875] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:44:13:875] Match:token=005A,msgId=0F00
+[2026-04-03 19:44:13:875] SetEvent
+[2026-04-03 19:44:13:875] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:44:13:875] get ack
+[2026-04-03 19:44:13:875] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:44:13:875] DoGeneralServicesTest end
+[2026-04-03 19:44:13:875] OnShowLoadingMessage before
+[2026-04-03 19:44:13:891] OnShowLoadingMessage after
+[2026-04-03 19:44:13:891] OnShowLoadingMessage after
+[2026-04-03 19:44:38:975] --------------------CMainDlg::DoQueryModuleMac  Begin--------------------
+[2026-04-03 19:44:38:975] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:44:38:991] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:44:38:991] --------------------CMainDlg::DoQueryModuleMac  End  --------------------
+[2026-04-03 19:44:39:007] OnShowLoadingMessage before
+[2026-04-03 19:44:39:007] DoGeneralServicesTest begin
+[2026-04-03 19:44:39:007] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:44:39:007] send:1B1B1B1B1B0A1B0A42011000005EFFA540302E2F32,len=-1763865740
+[2026-04-03 19:44:39:007] WriteFile before
+[2026-04-03 19:44:39:022] WriteFile after:writeLen=21
+[2026-04-03 19:44:39:022] wait ack:m_ackKey=005E_1000
+[2026-04-03 19:44:39:053] ReadFile before
+[2026-04-03 19:44:39:069] ReadFile after
+[2026-04-03 19:44:39:069] recv:1B1B1B1B1B0A1B0A62451000005EFFB110FF4C5A001F884E
+[2026-04-03 19:44:39:116] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:44:39:116] Match:token=005E,msgId=1000
+[2026-04-03 19:44:39:116] SetEvent
+[2026-04-03 19:44:39:116] get ack
+[2026-04-03 19:44:39:116] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:44:39:116] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:44:39:116] DoGeneralServicesTest end
+[2026-04-03 19:44:39:116] OnShowLoadingMessage before
+[2026-04-03 19:44:39:116] OnShowLoadingMessage after
+[2026-04-03 19:44:39:131] OnShowLoadingMessage after
+[2026-04-03 19:44:42:361] --------------------CMainDlg::DoQueryModuleMac  Begin--------------------
+[2026-04-03 19:44:42:361] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:44:42:376] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:44:42:376] --------------------CMainDlg::DoQueryModuleMac  End  --------------------
+[2026-04-03 19:44:42:392] OnShowLoadingMessage before
+[2026-04-03 19:44:42:392] DoGeneralServicesTest begin
+[2026-04-03 19:44:42:392] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:44:42:392] send:1B1B1B1B1B0A1B0A420111000061FFA540302E2F32,len=-1763865740
+[2026-04-03 19:44:42:392] WriteFile before
+[2026-04-03 19:44:42:392] WriteFile after:writeLen=21
+[2026-04-03 19:44:42:407] wait ack:m_ackKey=0061_1100
+[2026-04-03 19:44:42:439] ReadFile before
+[2026-04-03 19:44:42:454] ReadFile after
+[2026-04-03 19:44:42:454] recv:1B1B1B1B1B0A1B0A624511000061FFB110FF4C5A001F884E
+[2026-04-03 19:44:42:501] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:44:42:501] Match:token=0061,msgId=1100
+[2026-04-03 19:44:42:501] SetEvent
+[2026-04-03 19:44:42:501] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:44:42:517] get ack
+[2026-04-03 19:44:42:517] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:44:42:517] DoGeneralServicesTest end
+[2026-04-03 19:44:42:517] OnShowLoadingMessage before
+[2026-04-03 19:44:42:517] OnShowLoadingMessage after
+[2026-04-03 19:44:42:532] OnShowLoadingMessage after
+[2026-04-03 19:44:44:295] --------------------CMainDlg::DoQueryModuleInfo  Begin--------------------
+[2026-04-03 19:44:44:295] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:44:44:295] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:44:44:311] --------------------CMainDlg::DoQueryModuleInfo  End  --------------------
+[2026-04-03 19:44:44:311] OnShowLoadingMessage before
+[2026-04-03 19:44:44:326] DoGeneralServicesTest begin
+[2026-04-03 19:44:44:326] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:44:44:326] send:1B1B1B1B1B0A1B0A420112000064FFA540302E2F31,len=-1763865740
+[2026-04-03 19:44:44:326] WriteFile before
+[2026-04-03 19:44:44:326] WriteFile after:writeLen=21
+[2026-04-03 19:44:44:326] wait ack:m_ackKey=0064_1200
+[2026-04-03 19:44:44:373] ReadFile before
+[2026-04-03 19:44:44:389] ReadFile after
+[2026-04-03 19:44:44:389] recv:1B1B1B1B1B0A1B0A624512000064FFB110FF01020002030120241224010B4E01004C5A001F884E0000
+[2026-04-03 19:44:44:435] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:44:44:435] Match:token=0064,msgId=1200
+[2026-04-03 19:44:44:435] SetEvent
+[2026-04-03 19:44:44:435] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:44:44:435] get ack
+[2026-04-03 19:44:44:435] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:44:44:435] DoGeneralServicesTest end
+[2026-04-03 19:44:44:435] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 19:44:44:435] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  End  --------------------
+[2026-04-03 19:44:44:451] OnShowLoadingMessage before
+[2026-04-03 19:44:44:451] OnShowLoadingMessage after
+[2026-04-03 19:44:44:451] OnShowLoadingMessage after
+[2026-04-03 19:46:34:899] --------------------CMainDlg::DoQueryModuleInfo  Begin--------------------
+[2026-04-03 19:46:34:899] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:46:34:915] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:46:34:915] DoGeneralServicesTest begin
+[2026-04-03 19:46:34:915] --------------------CMainDlg::DoQueryModuleInfo  End  --------------------
+[2026-04-03 19:46:34:930] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:46:34:930] OnShowLoadingMessage before
+[2026-04-03 19:46:34:930] send:1B1B1B1B1B0A1B0A420113000067FFA540302E2F31,len=-1763865740
+[2026-04-03 19:46:34:946] WriteFile before
+[2026-04-03 19:46:34:946] WriteFile after:writeLen=21
+[2026-04-03 19:46:34:946] wait ack:m_ackKey=0067_1300
+[2026-04-03 19:46:34:977] ReadFile before
+[2026-04-03 19:46:34:993] ReadFile after
+[2026-04-03 19:46:34:993] recv:1B1B1B1B1B0A1B0A624513000067FFB110FF01020002030120241224010B4E01004C5A001F884E0000
+[2026-04-03 19:46:35:040] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:46:35:040] Match:token=0067,msgId=1300
+[2026-04-03 19:46:35:040] SetEvent
+[2026-04-03 19:46:35:040] get ack
+[2026-04-03 19:46:35:040] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:46:35:040] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:46:35:040] DoGeneralServicesTest end
+[2026-04-03 19:46:35:040] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 19:46:35:040] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  End  --------------------
+[2026-04-03 19:46:35:055] OnShowLoadingMessage before
+[2026-04-03 19:46:35:055] OnShowLoadingMessage after
+[2026-04-03 19:46:35:055] OnShowLoadingMessage after
+[2026-04-03 19:47:10:202] --------------------CMainDlg::DoQueryModuleInfo  Begin--------------------
+[2026-04-03 19:47:10:202] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:47:10:202] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:47:10:202] --------------------CMainDlg::DoQueryModuleInfo  End  --------------------
+[2026-04-03 19:47:10:202] OnShowLoadingMessage before
+[2026-04-03 19:47:10:218] DoGeneralServicesTest begin
+[2026-04-03 19:47:10:218] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:47:10:218] send:1B1B1B1B1B0A1B0A42011400006BFFAD0440302E6666666666666666666666662F31,len=-1763865740
+[2026-04-03 19:47:10:218] WriteFile before
+[2026-04-03 19:47:10:218] WriteFile after:writeLen=34
+[2026-04-03 19:47:10:389] ReadFile before
+[2026-04-03 19:47:10:405] ReadFile after
+[2026-04-03 19:47:10:405] recv:1B1B1B1B1B0A1B0A62451400006BFFB1102D0240302E346335613030316638383466FF00020002010120241224010B4E01004C5A001F884F0000
+[2026-04-03 19:47:10:498] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:47:10:498] Match:token=006B,msgId=1400
+[2026-04-03 19:47:10:498] SetEvent
+[2026-04-03 19:47:10:498] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:47:10:530] get ack:Broadcast
+[2026-04-03 19:47:10:530] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 19:47:11:247] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:47:11:247] DoGeneralServicesTest end
+[2026-04-03 19:47:11:247] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 19:47:11:247] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  End  --------------------
+[2026-04-03 19:47:11:247] OnShowLoadingMessage before
+[2026-04-03 19:47:11:247] OnShowLoadingMessage after
+[2026-04-03 19:47:11:247] OnShowLoadingMessage after
+[2026-04-03 19:47:53:882] --------------------CMainDlg::DoRefreshSystemTestCmd  Begin--------------------
+[2026-04-03 19:47:53:882] --------------------CMainDlg::DoRefreshSystemTestCmd  End  --------------------
+[2026-04-03 19:47:59:483] --------------------CMainDlg::DoSystemTestAutoTestStart  Begin--------------------
+[2026-04-03 19:48:29:885] --------------------CMainDlg::DoQueryModuleMac  Begin--------------------
+[2026-04-03 19:48:29:901] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:48:29:901] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:48:29:901] --------------------CMainDlg::DoQueryModuleMac  End  --------------------
+[2026-04-03 19:48:29:917] DoGeneralServicesTest begin
+[2026-04-03 19:48:29:917] OnShowLoadingMessage before
+[2026-04-03 19:48:29:917] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:48:29:917] send:1B1B1B1B1B0A1B0A420116000071FFAD0440302E6666666666666666666666662F32,len=-1763865740
+[2026-04-03 19:48:29:917] WriteFile before
+[2026-04-03 19:48:29:932] WriteFile after:writeLen=34
+[2026-04-03 19:48:30:088] ReadFile before
+[2026-04-03 19:48:30:104] ReadFile after
+[2026-04-03 19:48:30:104] recv:1B1B1B1B1B0A1B0A624516000071FFB1102D0240302E346335613030316638383466FF4C5A001F884F
+[2026-04-03 19:48:30:151] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:48:30:151] Match:token=0071,msgId=1600
+[2026-04-03 19:48:30:151] SetEvent
+[2026-04-03 19:48:30:151] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:48:30:182] get ack:Broadcast
+[2026-04-03 19:48:30:962] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:48:30:962] DoGeneralServicesTest end
+[2026-04-03 19:48:30:977] OnShowLoadingMessage before
+[2026-04-03 19:48:30:977] OnShowLoadingMessage after
+[2026-04-03 19:48:30:993] OnShowLoadingMessage after
+[2026-04-03 19:48:43:255] --------------------CMainDlg::DoQueryModuleSnid  Begin--------------------
+[2026-04-03 19:48:43:255] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:48:43:255] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:48:43:270] --------------------CMainDlg::DoQueryModuleSnid  End  --------------------
+[2026-04-03 19:48:43:270] DoGeneralServicesTest begin
+[2026-04-03 19:48:43:286] OnShowLoadingMessage before
+[2026-04-03 19:48:43:286] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:48:43:286] send:1B1B1B1B1B0A1B0A420117000074FFAD0640302E6666666666666666666666662F332F31,len=-1763865740
+[2026-04-03 19:48:43:286] WriteFile before
+[2026-04-03 19:48:43:301] WriteFile after:writeLen=36
+[2026-04-03 19:48:43:457] ReadFile before
+[2026-04-03 19:48:43:473] ReadFile after
+[2026-04-03 19:48:43:473] recv:1B1B1B1B1B0A1B0A624517000074FFB1102D0240302E346335613030316638383466FF0000
+[2026-04-03 19:48:43:520] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:48:43:520] Match:token=0074,msgId=1700
+[2026-04-03 19:48:43:520] SetEvent
+[2026-04-03 19:48:43:520] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:48:43:551] get ack:Broadcast
+[2026-04-03 19:48:44:347] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:48:44:347] DoGeneralServicesTest end
+[2026-04-03 19:48:44:362] OnShowLoadingMessage before
+[2026-04-03 19:48:44:362] OnShowLoadingMessage after
+[2026-04-03 19:48:44:378] OnShowLoadingMessage after
+[2026-04-03 19:48:47:763] --------------------CMainDlg::DoQueryModuleSnid  Begin--------------------
+[2026-04-03 19:48:47:779] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:48:47:779] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:48:47:794] --------------------CMainDlg::DoQueryModuleSnid  End  --------------------
+[2026-04-03 19:48:47:794] OnShowLoadingMessage before
+[2026-04-03 19:48:47:810] DoGeneralServicesTest begin
+[2026-04-03 19:48:47:810] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:48:47:810] send:1B1B1B1B1B0A1B0A420118000078FFAD0640302E6666666666666666666666662F332F31,len=-1763865740
+[2026-04-03 19:48:47:810] WriteFile before
+[2026-04-03 19:48:47:825] WriteFile after:writeLen=36
+[2026-04-03 19:48:47:981] ReadFile before
+[2026-04-03 19:48:47:997] ReadFile after
+[2026-04-03 19:48:47:997] recv:1B1B1B1B1B0A1B0A624518000078FFB1102D0240302E346335613030316638383466FF0000
+[2026-04-03 19:48:48:044] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:48:48:044] Match:token=0078,msgId=1800
+[2026-04-03 19:48:48:044] SetEvent
+[2026-04-03 19:48:48:044] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:48:48:075] get ack:Broadcast
+[2026-04-03 19:48:48:855] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:48:48:855] DoGeneralServicesTest end
+[2026-04-03 19:48:48:871] OnShowLoadingMessage before
+[2026-04-03 19:48:48:871] OnShowLoadingMessage after
+[2026-04-03 19:48:48:886] OnShowLoadingMessage after
+[2026-04-03 19:48:57:373] --------------------CMainDlg::DoRefreshSystemTestCmd  Begin--------------------
+[2026-04-03 19:48:57:373] --------------------CMainDlg::DoRefreshSystemTestCmd  End  --------------------
+[2026-04-03 19:49:08:480] --------------------CMainDlg::DoRefreshSystemTestCmd  Begin--------------------
+[2026-04-03 19:49:08:480] --------------------CMainDlg::DoRefreshSystemTestCmd  End  --------------------
+[2026-04-03 19:49:38:809] --------------------CMainDlg::DoQueryModuleInfo  Begin--------------------
+[2026-04-03 19:49:38:809] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 19:49:38:825] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 19:49:38:825] DoGeneralServicesTest begin
+[2026-04-03 19:49:38:825] --------------------CMainDlg::DoQueryModuleInfo  End  --------------------
+[2026-04-03 19:49:38:840] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 19:49:38:840] OnShowLoadingMessage before
+[2026-04-03 19:49:38:856] send:1B1B1B1B1B0A1B0A42011B000082FFAD0440302E6666666666666666666666662F31,len=-1763865740
+[2026-04-03 19:49:38:856] WriteFile before
+[2026-04-03 19:49:38:856] WriteFile after:writeLen=34
+[2026-04-03 19:49:39:012] ReadFile before
+[2026-04-03 19:49:39:028] ReadFile after
+[2026-04-03 19:49:39:028] recv:1B1B1B1B1B0A1B0A62451B000082FFB1102D0240302E346335613030316638383466FF00020002010120241224010B4E01004C5A001F884F0000
+[2026-04-03 19:49:39:074] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 19:49:39:074] Match:token=0082,msgId=1B00
+[2026-04-03 19:49:39:074] SetEvent
+[2026-04-03 19:49:39:090] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 19:49:39:106] get ack:Broadcast
+[2026-04-03 19:49:39:106] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 19:49:39:886] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 19:49:39:901] DoGeneralServicesTest end
+[2026-04-03 19:49:39:901] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 19:49:39:901] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  End  --------------------
+[2026-04-03 19:49:39:917] OnShowLoadingMessage before
+[2026-04-03 19:49:39:917] OnShowLoadingMessage after
+[2026-04-03 19:49:39:917] OnShowLoadingMessage after
+[2026-04-03 19:50:02:755] open help file failed
+[2026-04-03 19:50:05:620] open help file failed
+[2026-04-03 20:12:10:847] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 20:12:10:847] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 20:12:10:878] DoDataSendAndReceiveTest begin
+[2026-04-03 20:12:10:878] send:AAAA,len=-1763865804
+[2026-04-03 20:12:10:878] WriteFile before
+[2026-04-03 20:12:10:878] WriteFile after:writeLen=2
+[2026-04-03 20:12:10:878] DoDataSendAndReceiveTest end
+[2026-04-03 20:12:19:973] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 20:12:19:973] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 20:12:19:988] DoDataSendAndReceiveTest begin
+[2026-04-03 20:12:19:988] send:AAAA,len=-1763865804
+[2026-04-03 20:12:19:988] WriteFile before
+[2026-04-03 20:12:19:988] WriteFile after:writeLen=2
+[2026-04-03 20:12:19:988] DoDataSendAndReceiveTest end
+[2026-04-03 20:12:29:083] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 20:12:29:083] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 20:12:29:099] DoDataSendAndReceiveTest begin
+[2026-04-03 20:12:29:099] send:AAAA5505,len=-1763865804
+[2026-04-03 20:12:29:099] WriteFile before
+[2026-04-03 20:12:29:099] WriteFile after:writeLen=4
+[2026-04-03 20:12:29:099] DoDataSendAndReceiveTest end
+[2026-04-03 20:13:07:283] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 20:13:07:285] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 20:13:07:293] DoDataSendAndReceiveTest begin
+[2026-04-03 20:13:07:301] send:1B1B1B1B1B0A1B0A52031C000085FFAD0840302E4646464646464646464646462F3130342F331100FFAAAA5505,len=-1763865804
+[2026-04-03 20:13:07:303] WriteFile before
+[2026-04-03 20:13:07:319] WriteFile after:writeLen=45
+[2026-04-03 20:13:07:321] DoDataSendAndReceiveTest end
+[2026-04-03 20:13:27:432] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 20:13:27:432] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 20:13:27:432] CIProtocol::Stop enter
+[2026-04-03 20:13:27:448] start DoStart after
+[2026-04-03 20:13:27:448] CIProtocol::Stop leave
+[2026-04-03 20:13:27:463] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 20:13:27:463] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 20:13:27:463] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 20:13:27:463] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 20:13:28:977] click closebtn
+[2026-04-03 20:13:29:070] --------------------CTaskExecution::StopWork  Begin--------------------
+[2026-04-03 20:13:29:086] --------------------CTaskExecution::StopWork  End  --------------------
+[2026-04-03 21:55:22:626] ###################################################
+[2026-04-03 21:55:22:626] #                                                 #
+[2026-04-03 21:55:22:642] #             PLBUS Test tool START               #
+[2026-04-03 21:55:22:642] #                                                 #
+[2026-04-03 21:55:22:642] ###################################################
+[2026-04-03 21:55:25:151] --------------------CUtil::GetAuthenticationCode  Begin--------------------
+[2026-04-03 21:55:25:161] user=LME
+[2026-04-03 21:55:25:171] --------------------CUtil::GetAuthenticationCode  End  --------------------
+[2026-04-03 21:55:25:211] --------------------CTaskExecution::StartWork  Begin--------------------
+[2026-04-03 21:55:25:211] --------------------CTaskExecution::StartWork  End  --------------------
+[2026-04-03 21:55:25:231] =03B76FD8
+[2026-04-03 21:55:25:231] =039B84E0
+[2026-04-03 21:55:25:241] =039D7BB8
+[2026-04-03 21:55:25:241] =03A6EFF8
+[2026-04-03 21:55:25:241] =03A94AF8
+[2026-04-03 21:55:25:251] =03AC0908
+[2026-04-03 21:55:25:251] =03AC4358
+[2026-04-03 21:55:25:251] =03AD3F20
+[2026-04-03 21:55:25:311] =03CA58F8
+[2026-04-03 21:55:25:311] =03CA8638
+[2026-04-03 21:55:25:321] =03CA9178
+[2026-04-03 21:55:25:321] --------------------CMainDlg::InitDevTestUI  Begin--------------------
+[2026-04-03 21:55:25:321] --------------------CMainDlg::InitDevTestUI  End  --------------------
+[2026-04-03 21:55:41:845] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 21:55:47:336] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 21:55:47:336] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 21:55:47:336] --------------------CMainDlg::DoComSwitch  End  --------------------
+[2026-04-03 21:55:47:352] OpenCom begin
+[2026-04-03 21:55:47:352] --------------------CTaskExecution::OpenCom  Begin--------------------
+[2026-04-03 21:55:47:352] --------------------CIProtocol::RegisterReceiveCallBack  Begin--------------------
+[2026-04-03 21:55:47:352] --------------------CIProtocol::RegisterReceiveCallBack  End  --------------------
+[2026-04-03 21:55:47:352] --------------------CProtocolComNative::Open  Begin--------------------
+[2026-04-03 21:55:47:352] com:COM7
+[2026-04-03 21:55:47:352] m_baudrate=115200, m_dataBit=0, m_checkBit=8, m_stopBit=0
+[2026-04-03 21:55:47:430] CSerialPort::OpenCom success
+[2026-04-03 21:55:47:430] --------------------CProtocolComNative::Open  End  --------------------
+[2026-04-03 21:55:47:445] start DoStart before
+[2026-04-03 21:55:47:445] CTaskExecution::CProtocolCom:Open com success, comName = COM7
+[2026-04-03 21:55:47:461] --------------------CTaskExecution::OpenCom  End  --------------------
+[2026-04-03 21:55:47:461] OpenCom end
+[2026-04-03 21:55:49:286] --------------------CMainDlg::DoQueryModuleMac  Begin--------------------
+[2026-04-03 21:55:49:286] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 21:55:49:286] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 21:55:49:302] --------------------CMainDlg::DoQueryModuleMac  End  --------------------
+[2026-04-03 21:55:49:302] DoGeneralServicesTest begin
+[2026-04-03 21:55:49:317] OnShowLoadingMessage before
+[2026-04-03 21:55:49:317] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 21:55:49:317] send:1B1B1B1B1B0A1B0A420100000029FFA540302E2F32,len=-1630484589
+[2026-04-03 21:55:49:317] WriteFile before
+[2026-04-03 21:55:49:317] WriteFile after:writeLen=21
+[2026-04-03 21:55:49:333] wait ack:m_ackKey=0029_0000
+[2026-04-03 21:55:49:364] ReadFile before
+[2026-04-03 21:55:49:380] ReadFile after
+[2026-04-03 21:55:49:380] recv:1B1B1B1B1B0A1B0A624500000029FFB110FF4C5A001F884E
+[2026-04-03 21:55:49:426] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 21:55:49:426] Match:token=0029,msgId=0000
+[2026-04-03 21:55:49:426] SetEvent
+[2026-04-03 21:55:49:426] get ack
+[2026-04-03 21:55:49:426] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 21:55:49:426] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 21:55:49:426] DoGeneralServicesTest end
+[2026-04-03 21:55:49:442] OnShowLoadingMessage before
+[2026-04-03 21:55:49:442] OnShowLoadingMessage after
+[2026-04-03 21:55:49:442] OnShowLoadingMessage after
+[2026-04-03 21:56:02:874] --------------------CMainDlg::DoQueryModuleMac  Begin--------------------
+[2026-04-03 21:56:02:874] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 21:56:02:874] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 21:56:02:874] --------------------CMainDlg::DoQueryModuleMac  End  --------------------
+[2026-04-03 21:56:02:889] OnShowLoadingMessage before
+[2026-04-03 21:56:02:889] DoGeneralServicesTest begin
+[2026-04-03 21:56:02:889] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 21:56:02:889] send:1B1B1B1B1B0A1B0A42010100002DFFAD0440302E6666666666666666666666662F32,len=-1630484589
+[2026-04-03 21:56:02:889] WriteFile before
+[2026-04-03 21:56:02:905] WriteFile after:writeLen=34
+[2026-04-03 21:56:03:061] ReadFile before
+[2026-04-03 21:56:03:076] ReadFile after
+[2026-04-03 21:56:03:076] recv:1B1B1B1B1B0A1B0A62450100002DFFB1102D0240302E346335613030316638383466FF4C5A001F884F
+[2026-04-03 21:56:03:123] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 21:56:03:123] Match:token=002D,msgId=0100
+[2026-04-03 21:56:03:123] SetEvent
+[2026-04-03 21:56:03:123] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 21:56:03:154] get ack:Broadcast
+[2026-04-03 21:56:03:934] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 21:56:03:934] DoGeneralServicesTest end
+[2026-04-03 21:56:03:934] OnShowLoadingMessage before
+[2026-04-03 21:56:03:934] OnShowLoadingMessage after
+[2026-04-03 21:56:03:934] OnShowLoadingMessage after
+[2026-04-03 21:56:06:649] --------------------CMainDlg::DoQueryModuleInfo  Begin--------------------
+[2026-04-03 21:56:06:664] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 21:56:06:664] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 21:56:06:680] --------------------CMainDlg::DoQueryModuleInfo  End  --------------------
+[2026-04-03 21:56:06:680] DoGeneralServicesTest begin
+[2026-04-03 21:56:06:680] OnShowLoadingMessage before
+[2026-04-03 21:56:06:696] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 21:56:06:696] send:1B1B1B1B1B0A1B0A420102000030FFAD0440302E6666666666666666666666662F31,len=-1630484589
+[2026-04-03 21:56:06:696] WriteFile before
+[2026-04-03 21:56:06:711] WriteFile after:writeLen=34
+[2026-04-03 21:56:06:852] ReadFile before
+[2026-04-03 21:56:06:867] ReadFile after
+[2026-04-03 21:56:06:867] recv:1B1B1B1B1B0A1B0A624502000030FFB1102D0240302E346335613030316638383466FF00020002010120241224010B4E01004C5A001F884F0000
+[2026-04-03 21:56:06:914] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 21:56:06:914] Match:token=0030,msgId=0200
+[2026-04-03 21:56:06:914] SetEvent
+[2026-04-03 21:56:06:914] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 21:56:06:930] get ack:Broadcast
+[2026-04-03 21:56:06:930] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 21:56:07:741] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 21:56:07:741] DoGeneralServicesTest end
+[2026-04-03 21:56:07:756] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 21:56:07:756] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  End  --------------------
+[2026-04-03 21:56:07:772] OnShowLoadingMessage before
+[2026-04-03 21:56:07:772] OnShowLoadingMessage after
+[2026-04-03 21:56:07:772] OnShowLoadingMessage after
+[2026-04-03 21:56:16:820] --------------------CMainDlg::DoQueryModuleInfo  Begin--------------------
+[2026-04-03 21:56:16:836] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 21:56:16:836] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 21:56:16:851] --------------------CMainDlg::DoQueryModuleInfo  End  --------------------
+[2026-04-03 21:56:16:851] DoGeneralServicesTest begin
+[2026-04-03 21:56:16:851] OnShowLoadingMessage before
+[2026-04-03 21:56:16:867] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 21:56:16:867] send:1B1B1B1B1B0A1B0A420103000033FFAD0440302E6666666666666666666666662F31,len=-1630484589
+[2026-04-03 21:56:16:867] WriteFile before
+[2026-04-03 21:56:16:882] WriteFile after:writeLen=34
+[2026-04-03 21:56:17:023] ReadFile before
+[2026-04-03 21:56:17:038] ReadFile after
+[2026-04-03 21:56:17:038] recv:1B1B1B1B1B0A1B0A624503000033FFB1102D0240302E346335613030316638383466FF00020002010120241224010B4E01004C5A001F884F0000
+[2026-04-03 21:56:17:085] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 21:56:17:085] Match:token=0033,msgId=0300
+[2026-04-03 21:56:17:085] SetEvent
+[2026-04-03 21:56:17:085] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 21:56:17:101] get ack:Broadcast
+[2026-04-03 21:56:17:101] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 21:56:17:912] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 21:56:17:912] DoGeneralServicesTest end
+[2026-04-03 21:56:17:928] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 21:56:17:928] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  End  --------------------
+[2026-04-03 21:56:17:928] OnShowLoadingMessage before
+[2026-04-03 21:56:17:943] OnShowLoadingMessage after
+[2026-04-03 21:56:17:943] OnShowLoadingMessage after
+[2026-04-03 21:56:38:098] --------------------CMainDlg::DoQueryModuleInfo  Begin--------------------
+[2026-04-03 21:56:38:098] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 21:56:38:114] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 21:56:38:114] --------------------CMainDlg::DoQueryModuleInfo  End  --------------------
+[2026-04-03 21:56:38:130] OnShowLoadingMessage before
+[2026-04-03 21:56:38:130] DoGeneralServicesTest begin
+[2026-04-03 21:56:38:130] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 21:56:38:130] send:1B1B1B1B1B0A1B0A420104000036FFAD0440302E6666666666666666666666662F31,len=-1630484589
+[2026-04-03 21:56:38:130] WriteFile before
+[2026-04-03 21:56:38:145] WriteFile after:writeLen=34
+[2026-04-03 21:56:38:286] ReadFile before
+[2026-04-03 21:56:38:301] ReadFile after
+[2026-04-03 21:56:38:301] recv:1B1B1B1B1B0A1B0A624504000036FFB1102D0240302E346335613030316638383466FF00020002010120241224010B4E01004C5A001F884F0000
+[2026-04-03 21:56:38:348] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 21:56:38:348] Match:token=0036,msgId=0400
+[2026-04-03 21:56:38:348] SetEvent
+[2026-04-03 21:56:38:348] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 21:56:38:364] get ack:Broadcast
+[2026-04-03 21:56:38:364] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 21:56:39:175] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 21:56:39:175] DoGeneralServicesTest end
+[2026-04-03 21:56:39:190] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 21:56:39:190] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  End  --------------------
+[2026-04-03 21:56:39:206] OnShowLoadingMessage before
+[2026-04-03 21:56:39:206] OnShowLoadingMessage after
+[2026-04-03 21:56:39:206] OnShowLoadingMessage after
+[2026-04-03 21:56:52:388] --------------------CMainDlg::DoQueryModuleInfo  Begin--------------------
+[2026-04-03 21:56:52:388] --------------------CTaskExecution::AppendTask  Begin--------------------
+[2026-04-03 21:56:52:404] --------------------CTaskExecution::AppendTask  End  --------------------
+[2026-04-03 21:56:52:404] DoGeneralServicesTest begin
+[2026-04-03 21:56:52:404] --------------------CMainDlg::DoQueryModuleInfo  End  --------------------
+[2026-04-03 21:56:52:404] --------------------CTaskExecution::DoGeneralServicesTest  Begin--------------------
+[2026-04-03 21:56:52:404] OnShowLoadingMessage before
+[2026-04-03 21:56:52:404] send:1B1B1B1B1B0A1B0A42010500003AFFA540302E2F31,len=-1630484589
+[2026-04-03 21:56:52:404] WriteFile before
+[2026-04-03 21:56:52:419] WriteFile after:writeLen=21
+[2026-04-03 21:56:52:419] wait ack:m_ackKey=003A_0500
+[2026-04-03 21:56:52:451] ReadFile before
+[2026-04-03 21:56:52:466] ReadFile after
+[2026-04-03 21:56:52:466] recv:1B1B1B1B1B0A1B0A62450500003AFFB110FF01020002030120241224010B4E01004C5A001F884E0000
+[2026-04-03 21:56:52:513] SafeCallReceiveCallBack before(timeout)
+[2026-04-03 21:56:52:513] Match:token=003A,msgId=0500
+[2026-04-03 21:56:52:513] SetEvent
+[2026-04-03 21:56:52:513] get ack
+[2026-04-03 21:56:52:513] SafeCallReceiveCallBack after(timeout=20)
+[2026-04-03 21:56:52:513] --------------------CTaskExecution::DoGeneralServicesTest  End  --------------------
+[2026-04-03 21:56:52:513] DoGeneralServicesTest end
+[2026-04-03 21:56:52:513] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  Begin--------------------
+[2026-04-03 21:56:52:513] --------------------CMainDlg::OnQueryModuleInfoTaskMessage  End  --------------------
+[2026-04-03 21:56:52:513] OnShowLoadingMessage before
+[2026-04-03 21:56:52:529] OnShowLoadingMessage after
+[2026-04-03 21:56:52:529] OnShowLoadingMessage after
+[2026-04-03 21:59:19:272] ClearCommError failed:error=22
+[2026-04-03 21:59:19:272] --------------------CTransmission::NotifyError  Begin--------------------
+[2026-04-03 21:59:19:287] --------------------CTransmission::NotifyError  End  --------------------
+[2026-04-03 21:59:19:802] --------------------CMainDlg::DoComSwitch  Begin--------------------
+[2026-04-03 21:59:19:802] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 21:59:19:818] CIProtocol::Stop enter
+[2026-04-03 21:59:19:864] start DoStart after
+[2026-04-03 21:59:19:880] CIProtocol::Stop leave
+[2026-04-03 21:59:19:958] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 21:59:19:958] --------------------CProtocolComNative::Close  Begin--------------------
+[2026-04-03 21:59:19:958] --------------------CProtocolComNative::Close  End  --------------------
+[2026-04-03 21:59:19:958] --------------------CMainDlg::DoComSwitch  End  --------------------
