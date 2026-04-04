@@ -13,7 +13,7 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import FileResponse
 import serial
 
-from uapps_codec import parse_frame, T_ACK, T_CON, T_NON, extract_mac
+from uapps_codec import parse_frame, T_ACK, T_CON, T_NON
 from poller import Poller
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
@@ -83,15 +83,8 @@ async def handle_rx_frame(frame):
         poller.feed_response(frame.msg_id, frame)
 
     elif frame.msg_type in (T_CON, T_NON):
-        # 主模组主动上报（NODE_JOIN、模式切换等）
-        # NODE_JOIN 帧格式待抓包确认（协议文档 C3），尽力提取 MAC
-        mac = extract_mac(frame.payload)
-        if mac and poller and mac != poller.master_mac:
-            logger.info(f"[serial] 主动上报，疑似 NODE_JOIN，MAC={mac}")
-            poller.add_slave(mac)
-            await broadcast_event({"type": "node_join", "mac": mac})
-        else:
-            logger.info(f"[serial] 主动上报帧（未识别），payload={frame.payload.hex()}")
+        # LM960B 实测无主动上报（C3/C4 已确认），此分支仅作日志记录
+        logger.info(f"[serial] 意外收到 CON/NON 帧，payload={frame.payload.hex()}")
 
 
 # ── WebSocket 广播 ────────────────────────────────────────────────
