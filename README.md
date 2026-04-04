@@ -199,6 +199,66 @@ pip install -r requirements.txt
 
 ---
 
+## 开发规范
+
+1. **禁止轻易执行"恢复出厂设置"类硬件操作**：涉及模组出厂复位、清除配置等不可逆操作的代码，必须有明确的二次确认机制，且不得在自动化流程（轮询、重试、初始化）中自动触发。
+2. **写入失败时分次写入**：向模组写入数据失败后，不得整包重试，应将数据拆分为更小的分片逐次写入，每次写入后等待确认再继续，避免因帧过长或缓冲区满导致连续失败。
+3. **版本号规范**：遵循 [Semantic Versioning](https://semver.org/lang/zh-CN/)，格式为 `MAJOR.MINOR.PATCH`：
+   - `MAJOR`：不兼容的协议或接口变更
+   - `MINOR`：向后兼容的新功能（新 demo 场景、新联调功能）
+   - `PATCH`：向后兼容的 bug 修复
+   - 开发阶段使用 `0.x.y`，当前版本在 `MILESTONE.md` 中维护
+   - 每次发布打 git tag，格式：`v0.1.0`
+
+---
+
+## 分支策略
+
+```
+main          ← 只放稳定可演示版本，每次发布打 tag（v0.x.0）
+dev           ← 日常开发主线，功能完成后合并回 main
+feature/xxx   ← 新 demo 场景或较大功能，从 dev 切出，完成后合并回 dev
+test/xxx      ← 联调测试专用分支，从 dev 或 main 切出，不合并回主线
+```
+
+**日常开发流程**：
+
+```bash
+# 在 dev 上开发
+git checkout dev
+# ... 改代码 ...
+git add <files>
+git commit -m "feat: ..."
+
+# 功能稳定，准备发布演示版本
+git checkout main
+git merge dev
+git tag -a v0.2.0 -m "v0.2.0 — ..."
+```
+
+**新 demo 场景**：
+
+```bash
+git checkout dev
+git checkout -b feature/scene-xxx
+# ... 开发 ...
+git checkout dev
+git merge feature/scene-xxx
+```
+
+**联调测试**：
+
+```bash
+git checkout -b test/xxx-yyyymmdd
+# 测试完直接丢弃或归档，不合并回主线
+```
+
+**当前分支状态**：
+- `main` @ `v0.1.0`：PLBUS双模自组网Demo可运行版本
+- `dev`：当前开发分支
+
+---
+
 ## 参考文档
 
 位于主仓库（绝对路径）`/Users/bonniedeng/文件/Source/hocen_platform/hocen_platform/hplc_docs/`：
