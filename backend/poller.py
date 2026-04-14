@@ -3,13 +3,14 @@ poller.py — 周期查询任务
 
 策略：
   - 启动后先查主模组 MAC（@0/2）
-  - 然后发广播发现帧（NON POST @1.FFFFFFFFFFFF/104/3，code=0x02）
-    等待 3s 收集所有从节点 ACK，每个 ACK payload 含从节点 MAC
+  - 然后发广播发现帧（CON GET @0.ffffffffffff/2）
+    等待 BROADCAST_WINDOW 秒收集所有从节点 ACK，每个 ACK payload 含从节点 6字节 MAC
   - 之后每轮（默认 5s）对所有已知从节点依次执行：
-      1. GET @1.<MAC>/3/20  → 信道模式
-      2. GET @1.<MAC>/3/21  → 无线频段
-      3. Ping @1.<MAC>/104/1 → RTT / 可达性
+      1. GET @0.<mac_lower>/3/20  → 信道模式
+      2. GET @0.<mac_lower>/3/21  → 无线频段
+      3. GET @0.<mac_lower>/1    → 可达性（RTT）
   - 每隔 DISCOVER_INTERVAL 重新广播一次，发现新加入的从节点
+  - LM960B 无主动上报机制，节点加入/模式切换均靠轮询感知（实测确认 2026-04-04）
   - 结果通过回调 on_result(event_dict) 推给 main.py
 """
 
@@ -70,7 +71,7 @@ class Poller:
             self._task.cancel()
 
     def add_slave(self, mac: str):
-        """动态注册新发现的从节点（NODE_JOIN 上报时调用）"""
+        """动态注册新发现的从节点（广播发现 ACK 或外部调用时使用）"""
         mac = mac.upper()
         if mac not in self.slave_macs:
             self.slave_macs.add(mac)

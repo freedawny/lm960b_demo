@@ -71,7 +71,7 @@ def encode_uri_path(path: str) -> bytes:
     示例：
       '0/2'                  → a4 40 30 2f 32
       '0/3/20'               → a7 40 30 2f 33 2f 32 30
-      '1.112233445566/104/1' → ad 08 40 31 2e ... (扩展length)
+      '0.112233445566/104/1' → ad 08 40 30 2e ... (扩展length)
     """
     value = ("@" + path).encode("ascii")
     length = len(value)
