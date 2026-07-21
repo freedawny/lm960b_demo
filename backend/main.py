@@ -4,6 +4,7 @@ main.py — FastAPI + WebSocket + 串口读写 + 内存态节点表
 
 import asyncio
 import logging
+import os
 import sys
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -12,6 +13,7 @@ from typing import Set
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.responses import FileResponse
 import serial
+import serial.tools.list_ports
 
 from uapps_codec import parse_frame, T_ACK, T_CON, T_NON
 from poller import Poller
@@ -19,8 +21,21 @@ from poller import Poller
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
-SERIAL_PORT = "/dev/cu.usbserial-10"
-SERIAL_BAUD = 115200
+def get_serial_port() -> str:
+    env_port = os.environ.get("SERIAL_PORT")
+    if env_port:
+        return env_port
+    
+    ports = serial.tools.list_ports.comports()
+    for p in ports:
+        if "usbserial" in p.device or "ttyUSB" in p.device or "ttyACM" in p.device:
+            logger.info(f"[serial] 自动探测到可用串口: {p.device}")
+            return p.device
+            
+    return "/dev/cu.usbserial-1130"
+
+SERIAL_PORT = get_serial_port()
+SERIAL_BAUD = int(os.environ.get("SERIAL_BAUD", "115200"))
 
 ws_clients: Set[WebSocket] = set()
 poller: Poller | None = None

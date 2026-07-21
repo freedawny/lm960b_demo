@@ -28,10 +28,12 @@ LM960B 双模自组网 Demo，用于香港消防署演示 PLBUS 双模（HPLC有
 
 ## 硬件环境
 
-- 串口：`/dev/cu.usbserial-10`（FTDI）
+- 串口（默认）：`/dev/cu.usbserial-1130`（PL2303）
+- 串口（备用）：`/dev/cu.usbserial-10`（FTDI）
 - 主模组 MAC：`4C5A001F884E`
 - 从模组 MAC：`4C5A001F884F`（DID=1）
 - 启动：`./run.sh`，访问 `http://localhost:8000`
+- 切换串口：`SERIAL_PORT=/dev/cu.usbserial-10 ./run.sh`
 
 ## 协议关键点（已验证，勿改回）
 
